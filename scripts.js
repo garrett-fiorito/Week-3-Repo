@@ -33,7 +33,7 @@ console.log(concatenated); // Output: Sam Tommy Tim Sally Buck Bob
 // 5:: Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 let nameLengths = [];
 for(let element of names) { // // Loops over each name in the names array from line 17.
-    nameLengths += element.length; // adds the length of each name to the nameLengths array.
+    nameLengths += element.length + " "; // adds the length of each name to the nameLengths array.
 }
 console.log(nameLengths); // Output: 3 5 3 5 4 3
 
@@ -73,7 +73,7 @@ const findAverage = numbers => {
     let average3 = sum5 / numbers.length // calculates the average
     return average3; 
 }
-console.log(findAverage(testNumbers)); // Output: 21.25
+console.log(findAverage(testNumbers)); // Output: 23.75
 
 // 11: Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 const averageCheck = (numbers1, numbers2) => {
